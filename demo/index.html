@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f7f5ef">
+  <meta name="description" content="Your first lines of Rust, running right in your browser. Explore eight bite-sized demos, then try the exercises in Replit or VS Code.">
+  <title>Rust 101 · Your first lines of Rust</title>
+  <link rel="icon" href="icon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+  <script type="module" src="app.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#lesson-title">Skip to lesson</a>
+  <header class="topbar">
+    <a class="brand" href="#lesson-01" aria-label="Rust 101, first lesson"><span class="brand-mark">R<span>.</span></span><span>rust<span class="brand-number">101</span></span></a>
+    <span class="topbar-caption">A small start to something great.</span>
+    <a class="course-link" href="https://github.com/wolfbreed1829/rust-101">Full course on GitHub <span aria-hidden="true">↗</span></a>
+  </header>
+  <div class="layout">
+    <aside class="sidebar" aria-label="Course navigation">
+      <div class="sidebar-top"><span class="eyebrow">YOUR LEARNING PATH</span><span class="lesson-count">08</span></div>
+      <nav id="lesson-nav" aria-label="Lessons"><p class="loading">Loading lessons…</p></nav>
+      <div class="progress-card">
+        <div><strong id="progress-count">0 of 8</strong><span>demos explored</span></div>
+        <progress id="progress" max="8" value="0" aria-label="Demos explored"></progress>
+        <p>One small step at a time.<br>You're in the right place.</p>
+      </div>
+      <div class="sidebar-note"><span class="note-symbol" aria-hidden="true">✳</span><p>Curiosity is the only prerequisite.</p></div>
+    </aside>
+    <main id="main">
+      <section class="intro" aria-labelledby="page-title">
+        <div><p class="eyebrow intro-label"><span class="status-dot"></span> THE BROWSER DEMO</p><h1 id="page-title">Your first lines of <em>Rust.</em></h1><p class="intro-copy">A little code. A few snacks. A whole new skill.<br>Pick a lesson, read the code, and see what happens.</p></div>
+        <div class="intro-badge" aria-label="No installation needed"><span aria-hidden="true">{ }</span><small>Just press run.</small></div>
+      </section>
+      <section class="workspace" aria-labelledby="lesson-title">
+        <div class="lesson-heading">
+          <div class="lesson-heading-text"><span id="lesson-number" class="number-tile">01</span><div><p class="eyebrow" id="lesson-topic">YOUR FIRST RUST PROGRAM</p><h2 id="lesson-title" tabindex="-1">Say hello</h2></div></div>
+          <button id="run" class="run-button" type="button" disabled><svg viewBox="0 0 24 24" width="17" height="17" aria-hidden="true"><path d="m8 5 11 7-11 7Z" fill="currentColor"/></svg><span>Run program</span></button>
+        </div>
+        <p class="lesson-explanation" id="explanation">Loading your first lesson…</p>
+        <div class="panels">
+          <section class="code-panel" aria-labelledby="source-label">
+            <div class="panel-toolbar"><span><span class="file-dot" aria-hidden="true"></span><span id="source-label">src/main.rs</span></span><button class="subtle-button" id="copy-code" type="button" aria-label="Copy Rust source code" disabled>Copy code</button></div>
+            <pre class="source-code" aria-label="Rust source code, read only" tabindex="0"><code id="source-code"></code></pre>
+            <div class="code-caption"><span>RUST</span><span>Read here. Make it yours in your editor.</span></div>
+          </section>
+          <section class="output-panel" aria-labelledby="output-label">
+            <div class="panel-toolbar"><span id="output-label"><span class="terminal-symbol" aria-hidden="true">›_</span> Console</span><button class="subtle-button" id="clear-output" type="button">Clear</button></div>
+            <div class="console-body"><div class="console-prompt" id="console-prompt"><span aria-hidden="true">$</span> <span id="command">cargo run</span></div><div id="empty-output" class="empty-output"><span aria-hidden="true" class="empty-play">▷</span><strong>What will it say?</strong><p>Make a prediction, then<br>press <b>Run program</b>.</p></div><pre id="output" tabindex="0" aria-label="Program output" hidden></pre></div>
+            <div class="output-status" id="run-status" role="status" aria-live="polite"><span class="status-dot"></span><span id="status-text">Ready when you are</span></div>
+          </section>
+        </div>
+        <div class="practice-row">
+          <section class="practice-card"><span class="practice-icon" aria-hidden="true">↗</span><div><h3>Your turn</h3><p id="exercise"></p><a id="exercise-link" href="https://github.com/wolfbreed1829/rust-101/blob/main/lessons/01-hello.md">Open the exercise <span aria-hidden="true">→</span></a></div></section>
+          <section class="question-card"><span class="eyebrow">PAUSE & THINK</span><p id="question"></p></section>
+        </div>
+        <div class="lesson-footer"><span id="lesson-position">Lesson 1 of 8 <span>· 8 min</span></span><div class="navigation-buttons"><button id="previous" class="nav-button" type="button" disabled aria-label="Previous lesson">←</button><button id="next" class="nav-button next-button" type="button" disabled>Next lesson <span aria-hidden="true">→</span></button></div></div>
+      </section>
+      <footer class="page-footer"><p><span class="footer-mark" aria-hidden="true">✳</span> Actual Rust, running in your browser. No installation needed.</p><div><a href="https://github.com/wolfbreed1829/rust-101/blob/main/docs/SETUP-REPLIT.md">Use Replit ↗</a><a href="https://github.com/wolfbreed1829/rust-101/blob/main/docs/SETUP-VSCODE.md">Use VS Code ↗</a></div></footer>
+      <p id="load-error" role="alert" hidden></p>
+      <noscript><p class="error-message">Enable JavaScript to run the demos, or <a href="https://github.com/wolfbreed1829/rust-101">read the full course on GitHub</a>.</p></noscript>
+    </main>
+  </div>
+</body>
+</html>

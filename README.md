@@ -2,6 +2,8 @@
 
 **Start with two lines of output. Finish with your own tiny snack shop.**
 
+**[Try the live browser demo →](https://wolfbreed1829.github.io/rust-101/)** Run the Rust examples immediately, then follow the setup guide below to edit your own code.
+
 This is a hands-on first lesson for someone who has never written Rust. You can use **Replit in a browser** or **VS Code on your computer**. Both learners use the same files, commands, and exercises.
 
 Allow **75–90 minutes**, plus setup. Take breaks or split it into two sessions. No previous Rust or Git experience is needed.
