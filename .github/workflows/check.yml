@@ -1,0 +1,33 @@
+name: Check lesson starters
+
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  check:
+    strategy:
+      matrix:
+        os: [ubuntu-latest, windows-latest]
+    runs-on: ${{ matrix.os }}
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install stable Rust
+        run: rustup toolchain install stable --profile minimal --component rustfmt
+      - name: Check formatting
+        run: cargo +stable fmt --check
+      - name: Build all starters
+        run: cargo +stable build --all-targets --locked
+      - name: Run all starters
+        shell: bash
+        run: |
+          set -euo pipefail
+          cargo +stable run --locked
+          for source in examples/*.rs; do
+            example="$(basename "$source" .rs)"
+            cargo +stable run --locked --example "$example"
+          done

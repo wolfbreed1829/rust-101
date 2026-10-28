@@ -1,0 +1,8 @@
+[package]
+name = "rust_101"
+version = "0.1.0"
+edition = "2021"
+description = "A first Rust lesson with small exercises for Replit and VS Code learners"
+publish = false
+
+[dependencies]

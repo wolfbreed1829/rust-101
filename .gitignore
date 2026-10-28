@@ -1,0 +1,6 @@
+/target/
+*.zip
+.DS_Store
+Thumbs.db
+.env
+.env.*

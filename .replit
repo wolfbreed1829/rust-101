@@ -1,0 +1,6 @@
+entrypoint = "src/main.rs"
+run = "cargo run"
+hidden = ["target", ".git"]
+
+[gitHubImport]
+requiredFiles = [".replit", "replit.nix"]
